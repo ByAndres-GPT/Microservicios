@@ -11,15 +11,14 @@ async function mostrarUsuarios() {
   
       usuarios.usuarios.forEach((usuario) => {
         let nuevo =
-          '<tr>  <td id="id_usuario">' +
+          '<tr>  <td scope="col" id="id_usuario">' +
           usuario.id +
-          '</td><td id="nombre">' +
+          '</td><td scope="col" id="nombre">' +
           usuario.nombre +
-          '</td><td id="apellido">' +
+          '</td><td scope="col" id="apellido">' +
           usuario.apellido +
-          '</td><td id="correo">' +
-          usuario.correo +
-          '</td><td id="rol">';
+          '</td><td scope="col" id="correo">' +
+          usuario.correo ;
   
         document.querySelector("#root").insertAdjacentHTML("beforeend", nuevo);
       });
